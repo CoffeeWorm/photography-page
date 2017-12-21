@@ -1,0 +1,35 @@
+@charset="utf-8";
+
+@font-face {
+    font-family: "WS";
+    src: url("../font/Wisdom Script AJ.otf");
+}
+
+.navbar-nav>.active>a {
+    border-top: 3px solid #459fed;
+}
+
+.navbar-brand {
+    padding: 0px;
+}
+
+.navbar-header {
+    padding: 0px;
+}
+#navbar-collapse ul{
+	margin-top: 0;
+}
+
+#logo {
+    width: 60px;
+    padding: 0;
+    display: inline;
+}
+
+#logoWords {
+    margin-left: 10px;
+    font-size: 1.5em;
+    font-family: "WS";
+    font-weight: bolder;
+    color: #333;
+}
