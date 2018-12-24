@@ -29,14 +29,14 @@ $(".signUp").click(function() {
         ID: $(".signID").val(),
         email: $(".signPwd").val()
     };
-    $.ajax({
-        url: 'http://118.89.46.176/api/suggestion',
-        type: 'post',
-        data: form,
-        timeout: 5000,
-        success: null,
-        error: failure()
-    });
+    // $.ajax({
+    //     url: 'http://118.89.46.176/api/suggestion',
+    //     type: 'post',
+    //     data: form,
+    //     timeout: 5000,
+    //     success: null,
+    //     error: failure()
+    // });
 });
 //登陆ajax
 $(".signIn").click(function() {
@@ -45,21 +45,21 @@ $(".signIn").click(function() {
         password: $(".signPwd").val()
     };
 
-    var temp = $.ajax({
-        url: 'http://118.89.46.176/api/login',
-        type: 'get',
-        data: form,
-        success: function(data) {
-            if ("\"success\"" == data) {
-                window.open("https://www.baidu.com", "_self");
-            } else if ("\"failure\"" == data) {
-                failure();
-            }
-            $(".login-form")[0].reset();
-        },
-        error: function() {
-            failure();
-            $(".login-form")[0].reset();
-        }
-    });
+    // var temp = $.ajax({
+    //     url: 'http://118.89.46.176/api/login',
+    //     type: 'get',
+    //     data: form,
+    //     success: function(data) {
+    //         if ("\"success\"" == data) {
+    //             window.open("https://www.baidu.com", "_self");
+    //         } else if ("\"failure\"" == data) {
+    //             failure();
+    //         }
+    //         $(".login-form")[0].reset();
+    //     },
+    //     error: function() {
+    //         failure();
+    //         $(".login-form")[0].reset();
+    //     }
+    // });
 });

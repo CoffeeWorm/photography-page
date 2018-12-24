@@ -69,7 +69,7 @@
         <div class="row">
             <div class="col-lg-4 col-md-6 albumImgBorder wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
                 <a href="####" class="openGallery">
-                    <img class="img-responsive orign-img albumImg" src="img/_DSC0022-编辑-2.jpg" alt="">
+                    <img class="img-responsive orign-img albumImg" src="img/_DSC0022.jpg" alt="">
                     <div class="imgActive" >
                         <div class="imgIntroduce">
                             <div class="imgIntroduceContent">
@@ -206,16 +206,21 @@
     <section class="content" id="comment">
         <div class="comment-bg">
             <h2 class="cmt-title wow shake" data-wow-duration="1s" data-wow-delay="0.2s">REVIEWS</h2>
-            <h4 class="cmt-little-title wow fadeInDown">What people say about us.</h4>
+            <h4 class="cmt-little-title wow fadeInDown">What people say about my photos.</h4>
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner comt" id="comt" role="listbox">
                     <div class="item active">
                         <h3>"His photos are very beautiful."</h3>
                         <p>——Daryl Hodgeman</p>
                     </div>
+                    <div class="item">
+                        <h3>"There a lot of beautiful pictures."</h3>
+                        <p>——Hodgeman Daryl</p>
+                    </div>
                 </div>
                 <ol class="carousel-indicators dot" id="dot">
                     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
                 </ol>
             </div>
         </div>
@@ -337,22 +342,22 @@
             email: $("#inputEmail3").val(),
             content: $("#inputTextArea1").val()
         };
-        $.ajax({
-            url: 'http://118.89.46.176/api/suggestion',
-            type: 'get',
-            data: form,
-            success: function() {
-                alert("Submitted successfully!");
-                $('.contact-form')[0].reset();
-            },
-            error: function() {
-                alert("Error,please resubmit!");
-                $('.contact-form')[0].reset();
-            }
-        });
+        // $.ajax({
+        //     url: 'http://118.89.46.176/api/suggestion',
+        //     type: 'get',
+        //     data: form,
+        //     success: function() {
+        //         alert("Submitted successfully!");
+        //         $('.contact-form')[0].reset();
+        //     },
+        //     error: function() {
+        //         alert("Error,please resubmit!");
+        //         $('.contact-form')[0].reset();
+        //     }
+        // });
     });
     </script>
-    <script src="js/ajax.js" type="text/javascript"></script>
+    <!-- <script src="js/ajax.js" type="text/javascript"></script> -->
     <script src="js/login.js" type="text/javascript"></script>
     <script src="js/pagescroll.js" type="text/javascript"></script>
     <script src="js/parallax.js" type="text/javascript"></script>
