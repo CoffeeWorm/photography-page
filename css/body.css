@@ -22,3 +22,12 @@ a {
 .color-blue {
     color: #2e6da4;
 }
+
+/*update*/
+.title h4 {
+	font-size: 65px;
+}
+
+.title h2 {
+	font-size: 80px;
+}
